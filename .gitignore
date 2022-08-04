@@ -103,3 +103,6 @@ ENV/
 
 # Visual Studio Code
 .vscode/
+rhino/Scanner_End-Effector.3dmbak
+rhino/Scanner_End-Effector.3dm
+rhino/Scanner_End-effector.mtl
