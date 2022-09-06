@@ -60,14 +60,14 @@ html {
 
 body {
   /* color: #515151;*/
-  background-color: rgb(25, 25, 25);
+  background-color: #dae6fb;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #0693e3;
   text-decoration: none;
 }
 a strong {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #5ca2d4;
+  color: #8ed1fc;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -105,7 +105,7 @@ h4, h5, h6 {
 
 /* Body text */
 p {
-  color :rgb(255, 255, 255);
+  color :rgb(0, 0, 0);
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -117,7 +117,7 @@ strong {
 
 /* Lists */
 ul, ol, dl {
-  color :rgb(255, 255, 255)
+  color :rgb(0, 0, 0);
   margin-top: 0;
   margin-bottom: 1rem;
 }
