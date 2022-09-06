@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #268bd2;
+  color: #5ca2d4;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -117,6 +117,7 @@ strong {
 
 /* Lists */
 ul, ol, dl {
+  color :rgb(255, 255, 255)
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -176,7 +177,7 @@ pre {
 pre code {
   padding: 0;
   font-size: 90%;
-  color: #aecaec;
+  color: #d7dce4;
   background-color: transparent;
 }
 
@@ -237,18 +238,20 @@ img {
 
 /* Tables */
 table {
+  background-color: #aecaec;
   margin-bottom: 1rem;
   width: 100%;
   border: 1px solid #aecaec;
   border-collapse: collapse;
 }
-tbody tr:nth-child(even) td,
-tbody tr:nth-child(even) th {
-  background-color: #aecaec;
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #aecaec;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #999999;
+  background-color: #c3d3e6;
 }
 
 
@@ -337,7 +340,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #268bd2;
 }
 .page-title,
 .post-title {

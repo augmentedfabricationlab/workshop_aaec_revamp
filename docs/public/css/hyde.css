@@ -274,19 +274,19 @@ img.drop-corners-left {
 }
 .theme-base-0e .sidebar a:hover{
   color: #268bd2;
-  text-decoration: underline dotted #18517a;
+  text-decoration: thick underline dotted #18517a;
 }
 .theme-base-0e .sidebar a:active{
   color: #18517a;
-  text-decoration: underline dotted #18517a;
+  text-decoration: thick underline dotted #18517a;
 }
 
 .theme-base-0e .content a{
-  color: #268bd2;
+  color: #5ca2d4;
   text-decoration: none;
 }
 .theme-base-0e .related-posts li a:hover{
-  color: #268bd2;
+  color: #5ca2d4;
   text-decoration: underline dotted #18517a;
 }
 .theme-base-0e .related-posts li a:active{
