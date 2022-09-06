@@ -24,17 +24,17 @@ Execute the commands below in Anaconda Prompt:
     (base) conda config --add channels conda-forge
 
 #### Windows
-    (base) conda create -n rsrd compas_fab=0.22.0 --yes
-    (base) conda activate rsrd
+    (base) conda create -n revamp compas_fab=0.22.0 --yes
+    (base) conda activate revamp
 
 #### Mac
-    (base) conda create -n rsrd compas_fab=0.22.0 python.app --yes
-    (base) conda activate rsrd
+    (base) conda create -n revamp compas_fab=0.22.0 python.app --yes
+    (base) conda activate revamp
     
 
 #### Verify Installation
 
-    (rsrd) pip show compas_fab
+    (revamp) pip show compas_fab
 
     Name: compas-fab
     Version: 0.22.0
@@ -43,28 +43,29 @@ Execute the commands below in Anaconda Prompt:
 
 #### Install on Rhino
 
-    (rsrd) python -m compas_rhino.install -v 7.0
+    (revamp) python -m compas_rhino.install -v 7.0
 
 
 ### 2. Installation of Dependencies
 
-    (rsrd) conda install git
+    (revamp) conda install git
 
 #### UR Fabrication Control
     
-    (rsrd) python -m pip install git+https://github.com/augmentedfabricationlab/ur_fabrication_control@master#egg=ur_fabrication_control
-    (rsrd) python -m compas_rhino.install -p ur_fabrication_control -v 7.0
+    (revamp) python -m pip install git+https://github.com/augmentedfabricationlab/ur_fabrication_control@master#egg=ur_fabrication_control
+    (revamp) python -m compas_rhino.install -p ur_fabrication_control -v 7.0
 
 
-### 3. Cloning the Course Repository
+### 3. Cloning and installing the Course Repository
 
-Create a workspace directory:
+* Create a workspace directory: C:\Users\YOUR_USERNAME\workspace
+* Open Github Desktop, clone the [workshop_aaec_revamp](https://github.com/augmentedfabricationlab/workshop_aaec_revamp) repository into you workspace folder 
+* Install within your env (in editable mode):
 
-    C:\Users\YOUR_USERNAME\workspace\projects
-
-Then open Github Desktop and clone the [Robot See Robot Do repository](https://github.com/augmentedfabricationlab/robot_see_robot_do) repository into your projects folder. Then install the repo within your environment (in editable mode):
-
-    (rsrd) pip install -e your_filepath_to_robot_see_robot_do
-    (rsrd) python -m compas_rhino.install -p robot_see_robot_do -v 7.0
+```
+(revamp) cd C:\Users\YOUR_USERNAME\workspace
+(revamp) python -m pip install -e workshop_aaec_revamp
+(revamp) python -m compas_rhino.install -p workshop_aaec_revamp -v 7.0
+```
 
 **Voilà! You can now go to VS Code, Rhino or Grasshopper to run the example files!**

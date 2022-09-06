@@ -1,4 +1,4 @@
-# Robotic 3D Printing on Knitted Formwork
+# Robotic 3D Printing on Sensed objects
 
 ## Requirements 
 * [Rhinoceros 3D 7.0](https://www.rhino3d.com/): Update Rhino to the newest version
@@ -41,12 +41,10 @@
 
     (revamp) conda install git
 
-#### Robotic Knitcrete
+#### UR Fabrication Control
     
-    (revamp) python -m pip install git+https://github.com/augmentedfabricationlab/robotic_knitcrete@master#egg=robotic_knitcrete
-    (revamp) python -m compas_rhino.install -p robotic_knitcrete -v 7.0
-    
-NOTE: If you are not using Rhino 6.0, after the above statement, add `-v` followed by the version of your Rhino software (i.e `-v 5.0` or `-v 7.0`)
+    (revamp) python -m pip install git+https://github.com/augmentedfabricationlab/ur_fabrication_control@master#egg=ur_fabrication_control
+    (revamp) python -m compas_rhino.install -p ur_fabrication_control -v 7.0
 
 ### 3. Cloning and installing the Course Repository
 
@@ -59,11 +57,4 @@ NOTE: If you are not using Rhino 6.0, after the above statement, add `-v` follow
 (revamp) python -m pip install -e workshop_aaec_revamp
 (revamp) python -m compas_rhino.install -p workshop_aaec_revamp -v 7.0
 ```
-
-### 4. Notes on RPC:
-
-Careful: RPC (Remote Procedure Call) for calling numpy functions from within Rhino, is using the CPython Interpreter of the latest installed environment, not defined specifically. If another interpreter should be used, this can be defined when creating the Proxy object.
-
-### Credits
-
 

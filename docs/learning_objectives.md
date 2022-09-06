@@ -3,12 +3,10 @@ layout: page
 title: Learning Objectives
 ---
 
-This workshop will introduce students to XR development and Robotics using an object-aware AR app and a collaborative robot arm. The prepared sessions build upon each other towards the ability to develop an interactive architectural scenario which incorporates real-time robotic interaction: 
+This workshop will introduce students to Mobile Robotics using an mobile platform and a collaborative robot arm. The prepared sessions build upon each other towards the ability to perform in situ additive manufacturing with the aim of extending the lifespan of existing building components and including novel architectural or functional features: 
 
-* Students will learn the basic concepts of human-robot collaboration
-* Students will learn the basics of assembly information modelling
-* Students will learn specific workflows for authoring AR content for assembly routines in incon.ai
-* Students will learn to author and prototype robotic workflows and simulations 
-* Students will be able to think independently about novel robotic workflow concepts and implement them in small groups 
-* Students will be able to experimentally validate their concepts in a full-scale prototype
+* Students will learn the basic concepts of mobile construction robotics
+* Students will learn the basics of sensing and context awareness
+* Students will learn specific workflows for extrustion 3d printing
+* Students will learn adaptive design-to-fabrication workflows 
 

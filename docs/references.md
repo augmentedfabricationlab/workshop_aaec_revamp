@@ -3,7 +3,9 @@ layout: page
 title: References
 ---
 
-### Augmented Fabrication
+### Check back later!
+
+<!-- ### Augmented Fabrication
 Mueller, Stefanie, Anna Seufert, Huaishu Peng, Robert Kovacs, Kevin Reuss, François Guimbretière, and Patrick Baudisch. 2019. “FormFab: Continuous Interactive Fabrication.”
 
 Jahn, Gwyllim, Cameron Newnham, Nick van den Berg, Melissa Iraheta, and Jackson Wells. 2020. “Holographic Construction.” In Impact: Design With All Senses, 314–24. Springer International Publishing
@@ -26,7 +28,7 @@ Han, Isla Xi, Forrest Meggers, and Stefana Parascho. 2021. “Bridging the Colle
 Sandy, Timothy, and Jonas Buchli. 2018. “Object-Based Visual-Inertial Tracking for Additive Fabrication.” IEEE Robotics and Automation Letters 3. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8270591.
 
 ### Reciprocal Frames
-Song, Peng, Chi-Wing Fu, Prashant Goswami, Jianmin Zheng, Niloy J. Mitra, and Daniel Cohen-Or. 2013. “Reciprocal Frame Structures Made Easy.” ACM Transactions on Graphics 32 (4): 1–13. https://doi.org/10.1145/2461912.2461915.
+Song, Peng, Chi-Wing Fu, Prashant Goswami, Jianmin Zheng, Niloy J. Mitra, and Daniel Cohen-Or. 2013. “Reciprocal Frame Structures Made Easy.” ACM Transactions on Graphics 32 (4): 1–13. https://doi.org/10.1145/2461912.2461915. -->
 
 
 
