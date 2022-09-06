@@ -7,11 +7,11 @@ permalink:        pretty
 #relative_permalinks: true
 
 # Setup
-title:            Robot See Robot Do
-tagline:          'Robot See Robot Do'
-description:      'MRAC WORKSHOP'
-baseurl: "/robot_see_robot_do/" # the subpath of your site, e.g. /blog
-url: "https://le-ar-n.github.io/robot_see_robot_do/" # the base hostname & protocol for your site, e.g. http://example.com
+title:            revAMp
+tagline:          'In situ AM for building repair with mobile robots'
+description:      'AAEC WORKSHOP'
+baseurl: "/workshop_aaec_revamp/" # the subpath of your site, e.g. /blog
+url: "https://github.com/augmentedfabricationlab/workshop_aaec_revamp" # the base hostname & protocol for your site, e.g. http://example.com
 
 paginate:         5
 
@@ -19,7 +19,7 @@ paginate:         5
 #version:          2.1.0
 
 github:
-  repo:           https://github.com/augmentedfabricationlab/robot_see_robot_do
+  repo:           https://github.com/augmentedfabricationlab/workshop_aaec_revamp
 
 plugins:
   - jekyll-feed
