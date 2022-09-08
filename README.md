@@ -1,5 +1,10 @@
 # Robotic 3D Printing on Sensed objects
 
+## Documentation
+
+More information can be found on:
+https://augmentedfabricationlab.github.io/workshop_aaec_revamp/
+
 ## Requirements 
 * [Rhinoceros 3D 7.0](https://www.rhino3d.com/): Update Rhino to the newest version
 
