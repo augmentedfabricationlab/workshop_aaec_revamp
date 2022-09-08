@@ -3,6 +3,15 @@ layout: page
 title: Method
 ---
 
+
+# revAMp Fabrication Method
+
+
+<figure>
+  <img src="{{site.baseurl}}images/Test.jpg" alt="3D Object to be revAMped." style="width:75%" class="center">
+  <figcaption>Image: 3D Object to be revAMped.</figcaption>
+</figure>
+
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
