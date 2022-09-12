@@ -47,7 +47,7 @@ In this step, the point-clouds are collected by moving the scanner along the pre
 For further path-planning a closed surface is reconstructed based on the registered point-cloud. Compensation of scanning errors is performed by ~80% subsampling of the initial data sets.
 <figure>
   <img src="{{site.baseurl}}images/WorkFlow-06.jpg" alt="Surface Re-construction." style="width:75%" class="center">
-  <figcaption>Image: Scanning Trajectory.</figcaption>
+  <figcaption>Image: Surface Re-construction.</figcaption>
 </figure>
 
 ### Step 7: Printing Region Identifying
@@ -58,7 +58,7 @@ The reconstructed surface is utilized to trim the to-be-printed geometry.
 </figure>
 
 ### Step 8: Printing Path Design Generation
-Here, identifying the exact area for refined laser-scanning from the camera image is conducted and overlayed with a zig-zag scanning path.
+Here, the identified printing regieon is designed.
 <figure>
   <img src="{{site.baseurl}}images/WorkFlow-08.jpg" alt="Printing Path Design Generation." style="width:75%" class="center">
   <figcaption>Image: Printing Path Design Generation.</figcaption>
