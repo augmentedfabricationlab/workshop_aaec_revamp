@@ -17,7 +17,10 @@ The revAMp workshop aims to inspire the digitization of existing architectural c
   <figcaption>Image: LEGO repairs by street artist Jan Vormann, 2007.</figcaption>
 </figure>
 
-
+<figure>
+  <img src="{{site.baseurl}}images/Picture5.jpng" alt="Driving the mobile-robot to the building element." style="width:75%" class="center">
+  <figcaption>Image: Digital Rubble by Bastian Wibranek and Prof. Oliver Tessmann.</figcaption>
+</figure>
 
 <!-- ### Macrame
 
