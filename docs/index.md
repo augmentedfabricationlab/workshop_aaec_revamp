@@ -6,7 +6,7 @@ title: About
 
 
 <figure>
-  <img src="{{site.baseurl}}images/Picture6.jpg" alt="Clay extrusion with collaborative robot and mobile platform." style="width:75%" class="center">
+  <img src="{{site.baseurl}}images/Picture6.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:75%" class="center">
   <figcaption>Image: Mobile robotic systems for in situ construction.</figcaption>
 </figure>
 
