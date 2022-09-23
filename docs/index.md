@@ -7,13 +7,13 @@ title: About
 
 <figure>
   <img src="{{site.baseurl}}images/Picture6.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:75%" class="center">
-  <figcaption>Image: Mobile robotic systems for in situ construction.</figcaption>
+  <figcaption></figcaption>
 </figure>
 
 
 # Introduction
 
-The origin of the word REVAMP in the Wiktionary comes from re- +"Ž vamp (“to apply a vamp/patch").
+The origin of the word REVAMP in the Wiktionary comes from re + vamp (“to apply a vamp/patch").
 In the Oxford Dictionary, re·vamp is definded as an act of improving the form, structure, or appearance of something.
 
 While in this workshop we mean by revAMp: to revise, reconstruct, restore and renovate by means of Additive Manufacturing.
