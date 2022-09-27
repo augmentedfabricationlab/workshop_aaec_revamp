@@ -6,7 +6,7 @@ title: About
 
 
 <figure>
-  <img src="{{site.baseurl}}images/coverimage.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:110%" class="center">
+  <img src="{{site.baseurl}}images/coverimage.png" alt="imagecover." style="width:110%" class="center">
   <figcaption></figcaption>
 </figure>
 
@@ -19,6 +19,8 @@ The revAMp workshop is made possible by the support and assistance of the AMC TR
 
 
 <figure>
-  <img src="{{site.baseurl}}images/amclogo.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:25%" class="center">
+  <img src="{{site.baseurl}}images/amclogo.png" alt="AMC logo." style="width:25%" class="center">
   <figcaption></figcaption>
 </figure>
+
+https://amc-trr277.de/
