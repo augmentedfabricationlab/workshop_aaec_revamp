@@ -23,4 +23,4 @@ The revAMp workshop is made possible by the support and assistance of the AMC TR
   <figcaption></figcaption>
 </figure>
 
-https://amc-trr277.de/
+(https://amc-trr277.de/)
