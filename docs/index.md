@@ -11,15 +11,11 @@ title: About
 </figure>
 
 
-# Introduction
 
-The origin of the word REVAMP in the Wiktionary comes from re + vamp (“to apply a vamp/patch").
-In the Oxford Dictionary, re·vamp is definded as an act of improving the form, structure, or appearance of something.
+The revAMp workshop is made possible by the support and assistance of the AMC TRR277 Group. We would also like to sincerely thank both the Technical University of Braunschweig and the Technical University of Munich for their contributions to the success of this research. 
 
-While in this workshop, we mean by revAMp: to revise, reconstruct, restore and renovate by means of Additive Manufacturing and Digital Fabrication.
 
-Here is how you may encounter the word revAMp:
-revAMp    (verb)
-revAMps   (third person present)
-revAMped  (past tense)
-revAMping (present participle)
+<figure>
+  <img src="{{site.baseurl}}images/AMC.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:75%" class="center">
+  <figcaption></figcaption>
+</figure>
