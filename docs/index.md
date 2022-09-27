@@ -6,7 +6,7 @@ title: About
 
 
 <figure>
-  <img src="{{site.baseurl}}images/Picture6.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:75%" class="center">
+  <img src="{{site.baseurl}}images/Picture6.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:100%" class="center">
   <figcaption></figcaption>
 </figure>
 
