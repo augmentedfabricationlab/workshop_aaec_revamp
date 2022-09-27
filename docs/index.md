@@ -19,6 +19,6 @@ The revAMp workshop is made possible by the support and assistance of the AMC TR
 
 
 <figure>
-  <img src="{{site.baseurl}}images/amclogo.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:45%" class="center">
+  <img src="{{site.baseurl}}images/amclogo.png" alt="Clay extrusion with collaborative robot and mobile platform." style="width:25%" class="center">
   <figcaption></figcaption>
 </figure>
