@@ -8,7 +8,7 @@ title: Inspiration
 The revAMp workshop aims to inspire the digitization of existing architectural conservation and recovery processes through exploiting the potential of hybrid construction techniques and technologies. There have been various projects that have explored how to maintain or restore the functionality of an existing architectural buildings while still retaining its cultural and aesthetic appeal through different means. These are a few inspiring projects that motivated us to investigate our hybrid in situ revAMping process.
 
 <figure>
-  <img src="{{site.baseurl}}images/Picture3.png" alt="Driving the mobile-robot to the building element." style="width:100%" class="center">
+  <img src="{{site.baseurl}}images/Picture3.png" alt="Driving the mobile-robot to the building element." style="width:75%" class="center">
   <figcaption>Image: KOLUMBA MUSEUM by Atelier Peter Zumthor & Partner, 2007.</figcaption>
 </figure>
 
