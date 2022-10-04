@@ -60,14 +60,14 @@ html {
 
 body {
   /* color: #515151;*/
-  background-color: #fff7ed;
+  background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #0693e3;
+  color: #00aedd;
   text-decoration: none;
 }
 a strong {
@@ -111,7 +111,7 @@ p {
 }
 
 strong {
-  color: #268bd2;
+  color: #00aedd;
 }
 
 
@@ -340,7 +340,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #268bd2;
+  color: #00aedd;
 }
 .page-title,
 .post-title {
@@ -373,7 +373,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #00aedd;
   text-decoration: none;
 }
 .related-posts li a:hover small {
