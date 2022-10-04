@@ -31,8 +31,8 @@ def export_to_ply(path):
     # Enable depth stream
     # config.enable_stream(rs.stream.depth)
 
-    resolution = 1280, 720
-    config.enable_stream(rs.stream.depth, resolution[0], resolution[1], rs.format.z16, 6)
+    resolution = 848, 480
+    config.enable_stream(rs.stream.depth, resolution[0], resolution[1], rs.format.z16, 30)
     config.enable_stream(rs.stream.color, rs.format.rgb8, 30)
 
     # Start streaming with chosen configuration
@@ -41,18 +41,16 @@ def export_to_ply(path):
     # We'll use the colorizer to generate texture for our PLY
     # (alternatively, texture can be obtained from color or infrared stream)
     colorizer = rs.colorizer()
-    decimate = rs.decimation_filter()
-    decimate.set_option(rs.option.filter_magnitude, 1)
-    filters = [rs.disparity_transform(),
-               rs.spatial_filter(),
-               rs.temporal_filter(),
-               rs.disparity_transform(False)]
+    # decimate = rs.decimation_filter()
+    # decimate.set_option(rs.option.filter_magnitude, 1)
+    filters = [rs.spatial_filter(),
+               rs.temporal_filter()]
 
     try:
         # Wait for the next set of frames from the camera
         frames = pipe.wait_for_frames()
         depth_frame = frames.get_depth_frame()
-        depth_frame = decimate.process(depth_frame)
+        # depth_frame = decimate.process(depth_frame)
         for f in filters:
             depth_frame = f.process(depth_frame)
         colorized_depth = colorizer.process(depth_frame)
