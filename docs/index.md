@@ -6,7 +6,7 @@ title: About
 
 
 <figure>
-  <img src="{{site.baseurl}}images/Option1.jpg" alt="imagecover." style="width:150%" class="center">
+  <img src="{{site.baseurl}}images/Option1.jpg" alt="imagecover." style="width:200%" class="center">
   <figcaption></figcaption>
 </figure>
 
