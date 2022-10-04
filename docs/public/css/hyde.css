@@ -269,11 +269,11 @@ img.drop-corners-left {
 
 /* Magenta */
 .theme-base-0e .sidebar a{
-  color: #0693e3;
+  color: #00aedd;
   text-decoration: none;
 }
 .theme-base-0e .sidebar a:hover{
-  color: #0693e3;
+  color: #00aedd;
   text-decoration: thick underline dotted #18517a;
 }
 .theme-base-0e .sidebar a:active{
