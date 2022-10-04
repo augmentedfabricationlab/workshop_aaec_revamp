@@ -96,7 +96,7 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active {
   /*font-weight: bold;*/
   text-decoration: none;
-  color: #268bd2;
+  color: #00aedd;
 }
 
 /* Sticky sidebar
