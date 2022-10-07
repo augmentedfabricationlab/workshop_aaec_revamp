@@ -1,18 +1,22 @@
+import os
+
+from compas.files import PLY
+
 from compas.geometry import Frame
-from compas.rpc import Proxy
 from compas.geometry import Point
 from compas.geometry import Pointcloud
 from compas.geometry import Transformation as Tf
 from compas.geometry import KDTree
-# from compas.geometry import is_point_infront_plane
+
+from compas.datastructures import Mesh
+from compas.rpc import Proxy
+
 from .utilities import point_above_frame
-import time
 
 
 class ScanModel():
     def __init__(self, base_frame=None, tool_frame=None, pointcloud=None):
-        self.t0 = time.time()
-        print("t0: ", self.t0)
+
         if base_frame is None:
             self.base_frame = Frame([0, 0, 0], [1, 0, 0], [0, 1, 0])
         else:
@@ -37,7 +41,7 @@ class ScanModel():
     @pointcloud.setter
     def pointcloud(self, pointcloud):
         self._pointcloud_base = pointcloud
-
+    
     @property
     def mesh(self):
         return self._mesh
@@ -46,16 +50,35 @@ class ScanModel():
     def mesh(self, mesh):
         self._mesh = mesh
 
+    def pointcloud_from_ply(self, filepath):
+        ply = PLY(filepath)
+        ply.read()
+        vertices = ply.parser.vertices
+        faces = ply.parser.faces
+        print(len(vertices))
+        self.pointcloud = Pointcloud(vertices)
+        if len(faces) > 0:
+            self.mesh = Mesh.from_vertices_and_faces(vertices, faces)
+
+    def points(self):
+        return [{"pos": v.data} for v in self.pointcloud.points]
+
+    def pointcloud_from_bag(self, bag_filepath, ply_filepath):
+        if ply_filepath is None:
+            bag_path, bag_filename = os.path.split(bag_filepath)
+            ply_filename = bag_filename.split('.')[0]+'.ply'
+            ply_filepath = os.path.join(bag_path, ply_filename)
+        with Proxy("workshop_aaec_revamp.utilities_proxy") as util:
+            util.bag_to_ply(bag_filepath, ply_filepath)
+
+        self.pointcloud_from_ply(ply_filepath)
+
     def set_pc_in_tcp(self, tool_frame=None):
-        print("t1: ", self.t0 - time.time())
         if tool_frame is not None:
             self.tool_frame = tool_frame
         T = Tf.from_frame_to_frame(self.base_frame, self.tool_frame)
-        print("t2: ", self.t0 - time.time())
         points_tf = Point.transformed_collection(self._pointcloud_base.points, T)
-        print("t3: ", self.t0 - time.time())
         self._pointcloud_tf = Pointcloud(points_tf)
-        print("t4: ", self.t0 - time.time())
         return self.pointcloud
 
     def build_tree(self):
@@ -72,3 +95,15 @@ class ScanModel():
     def split_mesh_by_frame(self, frame):
         if self._mesh:
             pass
+
+if __name__ == '__main__':
+    bag_filepath = r"C:\Users\Gido\Documents\workspace\development\workshop_aaec_revamp\matlab_file\2022-08-05-13-28-46.bag"
+    ply_filepath = r"C:\Users\Gido\Documents\workspace\development\workshop_aaec_revamp\matlab_file\test_bag_to.ply"
+    # import matlab.engine
+    # eng= matlab.engine.start_matlab()
+    # path = r"C:\Users\Gido\Documents\workspace\development\workshop_aaec_revamp\src\workshop_aaec_revamp"
+    # eng.cd(path, nargout=0)
+    # p = eng.bag_to_ply(bag_filepath, ply_filepath)
+    # print(p)
+    sm = ScanModel()
+    sm.pointcloud_from_bag(bag_filepath, ply_filepath)
