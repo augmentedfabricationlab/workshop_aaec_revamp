@@ -7,6 +7,13 @@ def point_above_frame(point, frame):
     d = dot_vectors(n, p)
     return dot_vectors(n, v) >= d
 
+def points_above_frame(points, frame):
+    n = frame.zaxis
+    p = frame.point
+    d = dot_vectors(n, p)
+    ndot = n.dot
+    return filter(lambda v: ndot(v)>=d, points)
+
 class AttrDict(dict):
     def __init__(self, *args, **kwargs):
         super(AttrDict, self).__init__(*args, **kwargs)

@@ -2,6 +2,8 @@ import time
 from roslibpy import Topic
 from compas.geometry import Point
 from compas.geometry import Pointcloud
+from compas.datastructures import Mesh
+from compas.files import PLY
 
 
 class DataRecorder():
@@ -10,24 +12,28 @@ class DataRecorder():
 
     def __call__(self, msg):
         self.data.append(msg)
+        print(time.time())
 
 
 class PointcloudRecorder():
     def __init__(self, ros_client=None):
         self.ros_client = ros_client
-        self.pointcloud = None
+        self.pointcloud = Pointcloud([])
+        self.data_recorder = DataRecorder()
+
+    def clear(self):
+        self.pointcloud = Pointcloud([])
+        self.data_recorder = DataRecorder()
 
     def start_recording(self):
-        dr = DataRecorder()
-        self.listener.subscribe(dr)
-        self.data_recorder = dr
+        self.listener.subscribe(self.data_recorder)
         # self.listener.subscribe(lambda message: print(message['data']))
 
     def stop_recording(self):
         self.listener.unsubscribe()
 
-    def record_once(self, pointcloud):
-        self.listener.subscribe(pointcloud)
+    def record_once(self, dr=None):
+        self.listener.subscribe(self.data_recorder)
         # self.listener.subscribe(lambda message: print(message['data']))
         time.sleep(1)
         self.listener.unsubscribe()
@@ -41,13 +47,19 @@ class PointcloudRecorder():
                               throttle_rate=throttle_rate, queue_size=queue_size)
 
     def convert_data_to_pc(self):
-        pc = Pointcloud([])
         for line in self.data_recorder.data:
             data = line["data"]
             n = 3
             pts = [Point.from_data(data[i:i+n]) for i in range(0, len(data), n)]
-            self.pointcloud.points.extend(pts)
-        self.pointcloud = pc
+            self.pointcloud._points.extend(pts)
+        return self.pointcloud
+
+    def save_to_file(self, filepath):
+        mesh = Mesh()
+        for x, y, z in iter(self.pointcloud.points):
+            mesh.add_vertex(x=x, y=y, z=z)
+        ply = PLY(filepath)
+        ply.write(mesh)
 
 
 if __name__ == "__main__":
