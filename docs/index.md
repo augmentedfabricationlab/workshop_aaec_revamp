@@ -19,7 +19,7 @@ The revAMp workshop will take place at the AdvanceAEC Autumn School which is hos
 
 
 <figure>
-  <img src="{{site.baseurl}}images/logo.png" alt="AMC logo." style="width:40%" class="center">
+  <img src="{{site.baseurl}}images/image.png" alt="AMC logo." style="width:40%" class="center">
   <figcaption></figcaption>
 </figure>
 
