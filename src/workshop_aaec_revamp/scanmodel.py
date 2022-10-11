@@ -28,10 +28,6 @@ class ScanModel():
         else:
             return self._pointcloud
 
-    @pointcloud.setter
-    def pointcloud(self, pointcloud):
-        self._pointcloud = pointcloud
-
     @classmethod
     def from_ply(cls, filepath):
         sm = cls()
@@ -58,7 +54,7 @@ class ScanModel():
         self.pointcloud_from_ply(ply_filepath)
 
     def set_pc_in_tcp(self):
-        del self._pointcloud_tf
+        # del self._pointcloud_tf
         T = Transformation.from_frame_to_frame(self.base_frame, self.tool_frame)
         self._pointcloud_tf = self._pointcloud.transformed(T)
 

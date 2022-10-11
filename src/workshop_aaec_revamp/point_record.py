@@ -12,8 +12,6 @@ class DataRecorder():
 
     def __call__(self, msg):
         self.data.append(msg)
-        print(time.time())
-
 
 class PointcloudRecorder():
     def __init__(self, ros_client=None):
@@ -45,6 +43,9 @@ class PointcloudRecorder():
                   queue_size=10):
         self.listener = Topic(self.ros_client, topic_name, msg_type,
                               throttle_rate=throttle_rate, queue_size=queue_size)
+
+    def points(self):
+        return [{"pos": v.data} for v in self.pointcloud.points]
 
     def convert_data_to_pc(self):
         for line in self.data_recorder.data:
