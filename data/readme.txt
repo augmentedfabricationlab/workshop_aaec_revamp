@@ -1,0 +1,1 @@
+Please download the pointcloud files and place them back into this folder, this way the grasshopper file should be able to find them easily!

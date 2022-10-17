@@ -65,7 +65,21 @@ Execute the commands below in Anaconda Prompt:
 ```
 (revamp) cd C:\Users\YOUR_USERNAME\workspace
 (revamp) python -m pip install -e workshop_aaec_revamp
-(revamp) python -m compas_rhino.install -p workshop_aaec_revamp -v 7.0
+(revamp) python -m compas_rhino.install -p workshop_aaec_revamp -v7.0
 ```
+
+### 4. Cloning and installing additional repositories
+
+Simulation of the mobile platform:
+* [rbvogui_common](https://github.com/RobotnikAutomation/rbvogui_common)
+* [ewellix_description](https://github.com/RobotnikAutomation/ewellix_description)
+* [robotnik_sensors](https://github.com/augmentedfabricationlab/robotnik_sensors)
+* [mobile_fabrication_control](https://github.com/augmentedfabricationlab/mobile_fabrication_control)
+
+Install mobile_fabrication_control
+
+    (revamp) python -m pip install -e mobile_fabrication_control
+    (revamp) python -m compas_rhino.install -p mobile_fabrication_control -v7.0
+
 
 **Voilà! You can now go to VS Code, Rhino or Grasshopper to run the example files!**
