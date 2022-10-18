@@ -78,6 +78,7 @@ Simulation of the mobile platform:
 
 Install mobile_fabrication_control
 
+    (revamp) cd C:\Users\YOUR_USERNAME\workspace
     (revamp) python -m pip install -e mobile_fabrication_control
     (revamp) python -m compas_rhino.install -p mobile_fabrication_control -v7.0
 
